@@ -1,24 +1,50 @@
 body {
+    margin: 0;
     color: #bdc1c6;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #202124;
 }
 
+#header {
+    height: 50px;
+    text-align: left;
+    padding: 5px;
+}
+
+#header h2 {
+    display: inline;
+    font-size: 20px;
+}
+
 #navbar {
     font-size: 12px;
     color: #bdc1c6;
-    width: auto;
-    text-align: right;
+    width: 130px;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    margin: 5px 2px 100px;
 }
+
 
 #navbar a {
     color: #bdc1c6;
     text-decoration: none;
-    margin: 5px;
+    margin: 8px;
 }
 
 #navbar a:hover {
     text-decoration: underline;
+}
+
+#advancedHeader {
+    color: rgb(184, 85, 85);
+    border-bottom: #3c4043 1px solid;
+    margin-bottom: 20px;
+}
+
+#advancedHeader p {
+    margin: 10px 25px;
 }
 
 .container {
@@ -29,6 +55,86 @@ body {
     margin-top: 200px;
     text-align: center;
     width: 100%;
+}
+
+.container h4 {
+    margin-top: 0;
+    position: relative;
+    left: 80px;
+    bottom: 20px;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: -10px;
+    color: #8ab4f8;
+}
+
+#advancedContainer {
+    display: flex;
+    justify-content: left;
+    flex-flow: column wrap;
+}
+
+#advancedContainer p {
+    font-size: 13px;
+}
+
+#advancedContainer span {
+    font-size: 10px;
+}
+
+.highlight {
+    color: aliceblue;
+}
+
+.advancedDiv {
+    padding: 10px;
+    width: 100%;
+}
+
+.advancedLabel, .advancedInput {
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+.advancedInput {
+    min-width: 150px;
+    max-width: 500px;
+    width: 50%
+}
+
+.advancedInput input {
+    background-color: inherit;
+    border: #3c4043 1px solid;
+    width: 100%;
+    color: inherit;
+}
+
+.advancedInput input:focus {
+    outline: none;
+    border: #8ab4f8 1px solid;
+}
+
+.advancedLabel {
+    font-size: 10px;
+    width: 120px;
+}
+
+.advancedButton {
+    min-width: 150px;
+    max-width: 500px;
+    width: 50%;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.advancedButton input {
+    color: rgb(255, 255, 255);
+    background-color: #8ab4f8;
+    border: #8ab4f8 1px solid;
+    border-radius: 4px;
+    font-size: 10px;
+    height: 25px;
+    float: right;
 }
 
 .buttondiv {
@@ -48,9 +154,15 @@ body {
     background: #202124;
     color: #bdc1c6;
     padding: 5px 15px;
-    border: 1px solid #5f6368;
+    border: solid 1px #bdc1c6;;
     border-radius: 999px;
     width: 400px;
-    height: 30px;
+    height: 24px;
 }
 
+
+@media (max-width: 600px) {
+    #advancedContainer span {
+        display: none;
+    }
+}

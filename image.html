@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"  type="text/css" href="styles.css"/>
         <title>Search</title>
     </head>
     <body>
         <div id="navbar">
             <a href="index.html">Search</a>
-            <a href="#">Advanced</a>
+            <a href="advanced.html">Advanced</a>
         </div>
         <div class="container">
-            <h1>Google Search<h1>
-            <form action="https://www.google.se/search">
+            <h1>Google Search</h1>
+            <h4>Images</h4>
+            <form action="https://www.google.com/search">
                 <div class="searchdiv">
                     <input type="text" name="q">
+                    <input type="hidden" name="hl" value="sv">
+                    <input type="hidden" name="tbm" value="isch">
                 </div>
                 <div class="buttondiv">
                     <input type="submit" value="Search on Google">
-                    <input type="submit" value="I'm feeling lucky">
                 </div>
             </form>
         </div>
