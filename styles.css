@@ -97,9 +97,10 @@ body {
 }
 
 .advancedInput {
-    min-width: 150px;
+    min-width: 100px;
     max-width: 500px;
-    width: 50%
+    width: 50%;
+    padding-right: 30px;
 }
 
 .advancedInput input {
@@ -116,7 +117,7 @@ body {
 
 .advancedLabel {
     font-size: 10px;
-    width: 120px;
+    width: 109px;
 }
 
 .advancedButton {
@@ -161,7 +162,7 @@ body {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     #advancedContainer span {
         display: none;
     }
